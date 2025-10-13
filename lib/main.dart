@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:test_system/theme/app_color.dart';
-import 'package:test_system/views/spending_view.dart';
 import 'package:test_system/views/widgets/nav_bottom.dart';
 
 void main() async {

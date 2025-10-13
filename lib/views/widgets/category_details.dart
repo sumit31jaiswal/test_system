@@ -26,7 +26,7 @@ class CategoryDetailSheet extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.all(16),
           decoration: const BoxDecoration(
-            color: Colors.white,
+            color: AppColor.white,
             borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
           ),
           child: Column(
@@ -38,7 +38,7 @@ class CategoryDetailSheet extends StatelessWidget {
                   height: context.h(4),
                   margin: EdgeInsets.only(bottom: context.h(12)),
                   decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                    color: AppColor.lightGrey,
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),

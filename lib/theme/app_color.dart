@@ -10,4 +10,5 @@ class AppColor {
   static const Color grey = Color(0xFFEEEEEE);
   static const Color darkGrey = Color(0xFF424242);
   static const Color lightGrey = Colors.grey;
+  static const Color white = Colors.white;
 }

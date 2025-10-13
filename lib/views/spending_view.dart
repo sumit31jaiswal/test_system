@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:test_system/theme/app_color.dart';
 import 'package:test_system/utils/extension.dart';
 import 'package:test_system/views/widgets/category_card.dart';
-import 'package:test_system/views/widgets/nav_bottom.dart';
 
 import '../controllers/spending_controller.dart';
 
@@ -108,7 +107,7 @@ class SpendingScreen extends StatelessWidget {
               child: Container(
                 height: context.h(140),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFA5D6A7),
+                  color: AppColor.green,
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Center(

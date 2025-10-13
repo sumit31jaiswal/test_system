@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:test_system/theme/app_color.dart';
 import 'package:test_system/utils/extension.dart';
 import 'package:test_system/views/widgets/category_details.dart';
 import 'package:test_system/views/widgets/paint.dart';
@@ -21,7 +22,7 @@ class CategoryCard extends StatelessWidget {
         Get.bottomSheet(
           CategoryDetailSheet(model: model),
           isScrollControlled: true,
-          backgroundColor: Colors.white,
+          backgroundColor: AppColor.white,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
           ),
@@ -58,7 +59,7 @@ class CategoryCard extends StatelessWidget {
                 Icon(
                   c.iconForCategory(model.finleyCategory),
                   size: context.f(28),
-                  color: Colors.grey[800],
+                  color: AppColor.darkGrey,
                 ),
               ],
             ),
@@ -70,7 +71,7 @@ class CategoryCard extends StatelessWidget {
             maxLines: 1,
             style: TextStyle(
               fontSize: context.f(14),
-              color: Colors.black54,
+              color: AppColor.darkGrey,
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
@@ -79,7 +80,7 @@ class CategoryCard extends StatelessWidget {
             c.statusTextForModel(model),
             style: TextStyle(
               fontSize: context.f(12),
-              color: Colors.black54,
+              color: AppColor.darkGrey,
               fontWeight: FontWeight.normal,
             ),
             textAlign: TextAlign.center,
