@@ -4,7 +4,7 @@ import '../models/category_model.dart';
 
 class MockApiService {
   static Future<List<CategoryModel>> fetchSpendingData() async {
-    await Future.delayed(const Duration(milliseconds: 800)); // Simulated delay
+    await Future.delayed(const Duration(milliseconds: 800));
 
     final jsonString = await rootBundle.loadString('assets/sample_api.json');
     final List<dynamic> data = jsonDecode(jsonString);

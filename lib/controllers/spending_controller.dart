@@ -79,7 +79,6 @@ class SpendingController extends GetxController {
           permission = await LocationService.requestPermission();
         }
       } else if (permission == LocationPermission.deniedForever) {
-        // permanently denied
         Get.defaultDialog(
           title: 'Permission permanently denied',
           middleText:

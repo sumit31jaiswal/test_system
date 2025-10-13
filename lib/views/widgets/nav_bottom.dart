@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:test_system/theme/app_color.dart';
 import 'package:test_system/views/spending_view.dart';
 
