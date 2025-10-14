@@ -26,6 +26,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: true,
         currentIndex: currentIndex,
         onTap: (i) {
           setState(() {
