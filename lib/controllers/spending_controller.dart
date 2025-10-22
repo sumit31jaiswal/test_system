@@ -28,8 +28,11 @@ class SpendingController extends GetxController {
   Future<void> loadCategories() async {
     try {
       loading.value = true;
-      final List<CategoryModel> data = await MockApiService.fetchSpendingData();
-      categories.assignAll(data);
+      final List<CategoryModel>? data =
+          await MockApiService.fetchSpendingData();
+      if (data != null) {
+        categories.assignAll(data);
+      }
     } catch (e) {
       Get.snackbar('Error', 'Failed to load categories: $e');
     } finally {
